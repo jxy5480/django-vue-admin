@@ -34,6 +34,9 @@ from dvadmin.system.views.login import (
 from dvadmin.system.views.system_config import InitSettingsViewSet
 from dvadmin.utils.swagger import CustomOpenAPISchemaGenerator
 
+# Portal imports
+from portal.views import (PortalLoginView, PortalDataView)
+
 # =========== 初始化系统配置 =================
 dispatch.init_system_config()
 dispatch.init_dictionary()
@@ -81,6 +84,13 @@ urlpatterns = (
             path("api/init/dictionary/", InitDictionaryViewSet.as_view()),
             path("api/init/settings/", InitSettingsViewSet.as_view()),
             path("apiLogin/", ApiLogin.as_view()),
+
+            # Portal API
+            path("api/portal/login/", PortalLoginView.as_view(), name="token_obtain_pair"),
+            # GET Data
+            path("api/portal/data/", PortalDataView.as_view()),
+            # CRUD for book
+            path('api/', include('book.urls'))
         ]
         + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
         + static(settings.STATIC_URL, document_root=settings.STATIC_URL)
