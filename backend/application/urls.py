@@ -90,7 +90,9 @@ urlpatterns = (
             # GET Data
             path("api/portal/data/", PortalDataView.as_view()),
             # CRUD for book
-            path('api/', include('book.urls'))
+            path('api/', include('book.urls')),
+            # CRUD for CRUD_DEMO
+            path('',include('crud_demo.urls'))
         ]
         + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
         + static(settings.STATIC_URL, document_root=settings.STATIC_URL)

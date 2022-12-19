@@ -57,7 +57,8 @@ INSTALLED_APPS = [
     "dvadmin.system",
     "drf_yasg",
     "captcha",
-    'book' # CRUD for book
+    'book', # CRUD for book
+    "crud_demo"
 ]
 
 MIDDLEWARE = [
