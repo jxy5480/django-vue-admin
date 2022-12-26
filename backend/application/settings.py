@@ -58,7 +58,8 @@ INSTALLED_APPS = [
     "drf_yasg",
     "captcha",
     'book', # CRUD for book
-    "crud_demo"
+    "crud_demo", #CRUD tutorial
+    "crud_PH" #CRUD for PH
 ]
 
 MIDDLEWARE = [
