@@ -77,8 +77,8 @@ export const crudOptions = (vm) => {
         },
       },
       {
-        title: "Salinity Level",
-        key: "salinity",
+        title: "Seawater Level",
+        key: "seawater",
         type: "number",
         sortable: true,
         treeNode: true,
@@ -87,13 +87,13 @@ export const crudOptions = (vm) => {
           editDisabled: true,
           rules: [
             // 表单校验规则
-            { required: true, message: "Must enter Salinity level" },
+            { required: true, message: "Must enter Seawater level" },
           ],
           component: {
             props: {
               clearable: true,
             },
-            placeholder: "Please enter Salinity level",
+            placeholder: "Please enter Seawater level",
           },
           itemProps: {
             class: { yxtInput: true },

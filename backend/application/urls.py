@@ -98,7 +98,9 @@ urlpatterns = (
             # CRUD for dissolved oxygen
             path('',include('crud_dissolved_oxygen.urls')),
             # CRUD for salinity
-            path('',include('crud_salinity.urls'))
+            path('',include('crud_salinity.urls')),
+            # CRUD for seawater
+            path('',include('crud_seawater.urls'))
         ]
         + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
         + static(settings.STATIC_URL, document_root=settings.STATIC_URL)

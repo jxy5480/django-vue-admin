@@ -33,9 +33,9 @@ export const crudOptions = (vm) => {
       remove: {
         thin: true,
         text: "",
-        // disabled() {
-        //   return !vm.hasPermissions("Delete");
-        // },
+        disabled() {
+          return !vm.hasPermissions("Delete");
+        },
       },
     },
     indexRow: {

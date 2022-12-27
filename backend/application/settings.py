@@ -61,7 +61,8 @@ INSTALLED_APPS = [
     "crud_demo", #CRUD tutorial
     "crud_PH", #CRUD for PH
     "crud_dissolved_oxygen", #CRUD for dissolved oxygen
-    "crud_salinity" #CRUD for salinity
+    "crud_salinity", #CRUD for salinity
+    "crud_seawater" #CRUD for seawater
 ]
 
 MIDDLEWARE = [
