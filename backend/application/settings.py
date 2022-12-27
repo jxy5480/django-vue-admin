@@ -60,7 +60,8 @@ INSTALLED_APPS = [
     'book', # CRUD for book
     "crud_demo", #CRUD tutorial
     "crud_PH", #CRUD for PH
-    "crud_dissolved_oxygen" #CRUD for dissolved oxygen
+    "crud_dissolved_oxygen", #CRUD for dissolved oxygen
+    "crud_salinity" #CRUD for salinity
 ]
 
 MIDDLEWARE = [
