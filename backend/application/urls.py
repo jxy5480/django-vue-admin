@@ -94,7 +94,9 @@ urlpatterns = (
             # CRUD for CRUD_DEMO
             path('',include('crud_demo.urls')),
             # CRUD for PH
-            path('',include('crud_PH.urls'))
+            path('',include('crud_PH.urls')),
+            # CRUD for dissolved oxygen
+            path('',include('crud_dissolved_oxygen.urls'))
         ]
         + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
         + static(settings.STATIC_URL, document_root=settings.STATIC_URL)
