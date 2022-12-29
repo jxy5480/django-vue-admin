@@ -60,7 +60,7 @@ export const crudOptions = (vm) => {
         // disabled: true,
         width: 90,
         form: {
-          editDisabled: true,
+          // editDisabled: true,
           rules: [
             // 表单校验规则
             { required: true, message: "Must enter Time" },
@@ -84,7 +84,7 @@ export const crudOptions = (vm) => {
         treeNode: true,
         type: "input",
         form: {
-          editDisabled: true,
+          // editDisabled: false,
           rules: [
             // 表单校验规则
             { required: true, message: "Must enter Salinity level" },
